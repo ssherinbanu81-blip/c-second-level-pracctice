@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++)   // rows
+    {
+        char ch = 'A';   // every row start from A
+
+        for(int j = 1; j <= i; j++)
+        {
+            printf("%c", ch);
+            ch++;   // move to next character
+        }
+        printf("\n");
+    }
+    return 0;
+}
